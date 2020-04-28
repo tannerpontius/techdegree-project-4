@@ -1,5 +1,15 @@
 // Base style partial
 
+// Base Styles
+
 * {
     box-sizing: border-box;
+    p {
+        line-height: $line-height;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
+

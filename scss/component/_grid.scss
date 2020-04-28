@@ -1,0 +1,62 @@
+// Grid System
+
+.container {
+    padding: 0 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+}
+
+[class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card {
+    flex-basis: 100%;
+}
+
+.theme {
+    &.col-1 {
+        @include col(#927bc1);
+    }
+    &.col-2 {
+        @include col(#fd7856);
+    }
+    &.col-3 {
+        @include col(#deb2ee);
+    }
+    &.col-4 {
+        @include col(#7ee6fd);
+    }
+    &.col-5 {
+        @include col(#88d9a0);
+    }
+    &.col-6 {
+        @include col(#4da2bb);
+    }
+    &.col-7 {
+        @include col(#ec9fa3);
+    }
+    &.col-8 {
+        @include col(#fd9f85);
+    }
+    &.col-9 {
+        @include col(#e4757a);
+    }
+    &.col-10 {
+        @include col(#63cc82);
+    }
+    &.col-11 {
+        @include col(#51ddfc);
+    }
+    &.col-12 {
+        @include col(#80e8d1);
+    }
+}

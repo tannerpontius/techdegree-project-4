@@ -1,4 +1,30 @@
-// testing variables 
+
+
+%btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
 .btn {
-    color: $color-primary;
+    &.default {
+        @include btn($btn-default);
+    }
+    &.success {
+        @include btn($btn-success);
+    }
+    &.error {
+        @include btn($btn-error);
+    }
+    &.info {
+        @include btn($btn-info);
+    }
+    &.warning {
+        @include btn($btn-warning);
+    }
 }

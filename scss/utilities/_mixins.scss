@@ -1,0 +1,11 @@
+
+// Button styles mixin
+@mixin btn($bg) {
+    @extend %btn;
+    background-color: $bg;
+}
+
+// Column styles mixin
+@mixin col($bg) {
+    background-color: $bg;
+}

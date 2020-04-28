@@ -4,11 +4,16 @@
 $color-primary: #58e1c1;
 $color-secondary: #51ddfc;
 
-$btn-default: #51ddfc;
+$color-body: #777;
+
+$btn-default: $color-primary;
 $btn-success: #63cc82;
 $btn-error: #e4757a;
 $btn-warning: #fd7856;
 $btn-info: #927bc1;
+
+// Misc
+$margin-10: 10px;
 
 
 // typography
@@ -16,3 +21,9 @@ $line-height: 1.45em;
 
 // Columns
  
+
+
+
+
+// Breakpoint
+$breakpoint: 768px;
