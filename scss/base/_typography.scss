@@ -3,7 +3,28 @@
     color: $color-body;
 }
 
-.headline-primary {
-    color: $color-primary;
-    margin-left: $margin-10;
+
+.headline {
+    &-primary {
+        color: $color-primary;
+        margin-left: 10px;
+    }
+    &-secondary {
+        color: $color-body;
+        font-weight: 300;
+    }
+}
+
+.link {
+    color: $color-secondary;
+}
+
+.blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid $color-primary;
+    border-radius: 5px;
 }
