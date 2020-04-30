@@ -1,3 +1,7 @@
+/* ============================================= */
+/*                   Mixins                      */
+/* ============================================= */
+
 
 // Button styles mixin
 @mixin btn($bg) {
@@ -8,4 +12,33 @@
 // Column styles mixin
 @mixin col($bg) {
     background-color: $bg;
+}
+
+@mixin col-base {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+// Form styles mixin
+
+@mixin input {
+    display: block;
+    width: 94%;
+    margin: 10px auto 0;
+    border: none;
+    padding: 10px;
+    border-bottom: 5px solid #58e1c1; 
+}
+
+@mixin hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
