@@ -35,10 +35,18 @@
 }
 
 @mixin hidden {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+// Media Query Mixin
+
+@mixin mq($break) {
+    @media (min-width: $break) {
+        @content;
+    }
 }

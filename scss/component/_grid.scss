@@ -3,16 +3,37 @@
 /* ============================================= */
 .container {
     padding: 0 10px;
+    @include mq($breakpoint) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
+    @include mq($breakpoint) {
+        flex-direction: row;
+    }
 }
 
 [class^=col] {
     @include col-base;
+    @include mq($breakpoint) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+    }
+}
+
+[class^=col] + [class^=col] {
+    @include mq($breakpoint) {
+        margin-left: 10px;
+    }
 }
 
 .card {
@@ -41,6 +62,17 @@
     &.col-7 {
         @include col(#ec9fa3);
     }
+    
+    &.col-7.centered {
+        @include mq($breakpoint) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            flex-basis: 58.33%;
+            text-align: center;
+        }
+    }
+
     &.col-8 {
         @include col(#fd9f85);
     }
@@ -57,3 +89,18 @@
         @include col(#80e8d1);
     }
 }
+
+// Column Media Queries 
+
+
+@include mq($breakpoint) {
+    .col-4 {
+        flex-basis: 33.33%;
+    }
+    .col-8 {
+        flex-basis: 66.67%;
+    }
+}
+
+
+
