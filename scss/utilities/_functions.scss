@@ -4,13 +4,4 @@
 
 
 
-// Attempt to write a function for the col media queries
-
-// We need to increase the flex basis by 8.33% for each col from 1 through 12
-
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        flex-basis: $i + 8.33%;
-    }
-}
 
