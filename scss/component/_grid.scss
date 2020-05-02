@@ -98,7 +98,7 @@
 @include mq($breakpoint) {
     @for $i from 1 through 12 {
         .col-#{$i} {
-            flex-basis: $i * (100 / 12);
+            flex-basis: ($i * (100/12) *1%);
         }
     }
 }
