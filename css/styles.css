@@ -626,17 +626,6 @@ template {
   background-color: #ec9fa3;
 }
 
-@media (min-width: 768px) {
-  .theme.col-7.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -ms-flex-preferred-size: 58.33%;
-        flex-basis: 58.33%;
-    text-align: center;
-  }
-}
-
 .theme.col-8 {
   background-color: #fd9f85;
 }
@@ -658,13 +647,62 @@ template {
 }
 
 @media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-1 {
+    -ms-flex-preferred-size: 8.33%;
+        flex-basis: 8.33%;
+  }
+  .col-2 {
+    -ms-flex-preferred-size: 16.67%;
+        flex-basis: 16.67%;
+  }
+  .col-3 {
+    -ms-flex-preferred-size: 25.00%;
+        flex-basis: 25.00%;
+  }
   .col-4 {
     -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%;
   }
+  .col-5 {
+    -ms-flex-preferred-size: 41.67%;
+        flex-basis: 41.67%;
+  }
+  .col-6 {
+    -ms-flex-preferred-size: 50.00%;
+        flex-basis: 50.00%;
+  }
+  .col-7 {
+    -ms-flex-preferred-size: 58.33%;
+        flex-basis: 58.33%;
+  }
   .col-8 {
     -ms-flex-preferred-size: 66.67%;
         flex-basis: 66.67%;
+  }
+  .col-9 {
+    -ms-flex-preferred-size: 75.00%;
+        flex-basis: 75.00%;
+  }
+  .col-10 {
+    -ms-flex-preferred-size: 83.33%;
+        flex-basis: 83.33%;
+  }
+  .col-11 {
+    -ms-flex-preferred-size: 91.67%;
+        flex-basis: 91.67%;
+  }
+  .col-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -695,7 +733,7 @@ template {
 }
 
 @media (min-width: 768px) {
-  .logo {
+  .img-logo {
     margin-left: initial;
     margin-right: initial;
   }
@@ -745,5 +783,12 @@ template {
 .nav .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
+}
+
+@media (min-width: 768px) {
+  .nav .nav-link {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -27,6 +27,10 @@
             color: #fff;
             background-color: $color-primary;
         }
+
+        @include mq($breakpoint) {
+            flex-basis: 100px;
+        }
     }
 
 }
