@@ -538,6 +538,15 @@ template {
       flex-basis: 100%;
 }
 
+@media (min-width: 768px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .theme.col-1 {
   background-color: #927bc1;
 }

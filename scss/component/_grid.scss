@@ -38,6 +38,9 @@
 
 .card {
     flex-basis: 100%;
+    @include mq($breakpoint) {
+        flex-direction: row;
+    }
 }
 
 .theme {
